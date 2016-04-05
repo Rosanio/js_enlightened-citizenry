@@ -1,0 +1,6 @@
+{{log model.word}}
+{{#each model.word as |legislator|}}
+  <div>
+    {{legislator.count}} {{isLegislator legislator.legislator (concat-committee-array model.page1 model.page2 model.page3 model.page4 model.page5 model.page6 model.page7 model.page8 model.page9 model.page10 model.page11)}}
+  </div>
+{{/each}}

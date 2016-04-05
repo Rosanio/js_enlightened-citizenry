@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('upcoming-senate-bills');
   this.route('sponsor', {path: '/sponsor/:sponsor_id'});
   this.route('word-stats');
+  this.route('searched-word', {path: '/results/:word'});
 });
 
 export default Router;
