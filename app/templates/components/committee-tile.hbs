@@ -1,7 +1,7 @@
 <div class="committee">
-  <h4>{{committee.name}}</h4>
+  <h4 {{action 'showDetails'}}>{{committee.name}}</h4>
 </div>
-{{#if 'showDetails'}}
+{{#if showingDetails}}
   <p class="subcommitteeTitle">Subcommittees:</p>
   {{#each committees as |subcommittee|}}
     {{#if (isSubcommittee subcommittee committee)}}

@@ -1,9 +1,7 @@
 <h1>Recent House Bills</h1>
 
 {{#each model as |bill|}}
-  <div>
-    {{bill.short_title}}
-  </div>
+  {{bill-tile bill=bill}}
 {{/each}}
 <br>
 <a href='/'>Back</a>

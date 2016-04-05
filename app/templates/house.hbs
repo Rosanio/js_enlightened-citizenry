@@ -5,6 +5,7 @@
 <hr>
 <h2>Committees:</h2>
 <hr>
+{{returnAllPages}}
 {{#each model as |committee|}}
   {{#if (isNotSubcommittee committee)}}
     {{committee-tile committee=committee committees=model}}
