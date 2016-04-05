@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('results', {path: '/results/:zip'});
+  this.route('house');
+  this.route('senate');
 });
 
 export default Router;

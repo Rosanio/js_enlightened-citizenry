@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(params) {
-    var url = 'http://congress.api.sunlightfoundation.com/legislators/locate?apikey=817fa3b0cf4944cfb8d3729919c99c95&zip=' + params.zip;
+  model() {
+    var url = 'http://congress.api.sunlightfoundation.com/committees?chamber=house&apikey=817fa3b0cf4944cfb8d3729919c99c95';
     return Ember.$.getJSON(url).then(function(responseJSON) {
       return responseJSON.results;
     });

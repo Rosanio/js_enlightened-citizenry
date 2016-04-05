@@ -1,0 +1,12 @@
+<h1>House Info</h1>
+
+<a href="/recentHouseBills" class="btn btn-primary">Recent Bills</a>
+<a href="/upcomingHouseBills" class="btn btn-success">Upcoming Bills</a>
+<hr>
+{{#each model as |committee|}}
+  <div class="committee">
+    {{committee.name}}
+  </div>
+{{/each}}
+<br>
+<a href="/">Back</a>
