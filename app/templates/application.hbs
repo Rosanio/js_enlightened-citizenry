@@ -1,3 +1,40 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Enlightened Citizenry</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        {{#bs-dropdown tagName="li"}}
+          {{#bs-dropdown-toggle}}Senate <span class="caret"></span>{{/bs-dropdown-toggle}}
+          {{#bs-dropdown-menu}}
+            <li><a href="/senate">Committees</a></li>
+            <li><a href="/recent-senate-bills">Recent Bills</a></li>
+            <li><a href="/upcoming-senate-bills">Upcoming bills</a></li>
+          {{/bs-dropdown-menu}}
+        {{/bs-dropdown}}
+        {{#bs-dropdown tagName="li"}}
+          {{#bs-dropdown-toggle}}House <span class="caret"></span>{{/bs-dropdown-toggle}}
+          {{#bs-dropdown-menu}}
+            <li><a href="/house">Committees</a></li>
+            <li><a href="/recentHouseBills">Recent Bills</a></li>
+            <li><a href="/upcoming-house-bills">Upcoming Bills</a></li>
+          {{/bs-dropdown-menu}}
+        {{/bs-dropdown}}
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
 <div class="container">
   {{outlet}}
 </div>

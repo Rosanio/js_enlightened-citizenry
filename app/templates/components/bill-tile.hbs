@@ -4,7 +4,6 @@
     <h5>Bill Details:</h5>
     <p>{{bill.official_title}}</p>
     <p>{{#link-to 'sponsor' bill.sponsor_id}}{{bill.sponsor.title}} {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}{{/link-to}}</p>
-    {{log bill.sponsor_id}}
     <p>{{bill.introduced_on}}</p>
     <a href={{bill.last_version.urls.html}}>Link to latest version</a>
   {{/if}}
