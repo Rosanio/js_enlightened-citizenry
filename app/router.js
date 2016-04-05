@@ -11,6 +11,8 @@ Router.map(function() {
   this.route('senate');
   this.route('recentHouseBills');
   this.route('upcoming-house-bills');
+  this.route('recent-senate-bills');
+  this.route('upcoming-senate-bills');
 });
 
 export default Router;
