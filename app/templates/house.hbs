@@ -5,10 +5,9 @@
 <hr>
 <h2>Committees:</h2>
 <hr>
-{{returnAllPages}}
-{{#each model as |committee|}}
+{{#each (concat-committee-array model.page1 model.page2 model.page3 model.page4 model.page5 model.page6) as |committee|}}
   {{#if (isNotSubcommittee committee)}}
-    {{committee-tile committee=committee committees=model}}
+    {{committee-tile committee=committee committees=(concat-committee-array model.page1 model.page2 model.page3 model.page4 model.page5 model.page6)}}
   {{/if}}
 {{/each}}
 <br>
