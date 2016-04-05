@@ -1,0 +1,11 @@
+<div class="committee">
+  <h4>{{committee.name}}</h4>
+</div>
+{{#if 'showDetails'}}
+  <p class="subcommitteeTitle">Subcommittees:</p>
+  {{#each committees as |subcommittee|}}
+    {{#if (isSubcommittee subcommittee committee)}}
+      {{subcommittee.name}}
+    {{/if}}
+  {{/each}}
+{{/if}}

@@ -3,10 +3,12 @@
 <a href="/recentHouseBills" class="btn btn-primary">Recent Bills</a>
 <a href="/upcomingHouseBills" class="btn btn-success">Upcoming Bills</a>
 <hr>
+<h2>Committees:</h2>
+<hr>
 {{#each model as |committee|}}
-  <div class="committee">
-    {{committee.name}}
-  </div>
+  {{#if (isNotSubcommittee committee)}}
+    {{committee-tile committee=committee committees=model}}
+  {{/if}}
 {{/each}}
 <br>
 <a href="/">Back</a>
