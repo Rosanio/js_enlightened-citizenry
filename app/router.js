@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('house');
   this.route('senate');
   this.route('recentHouseBills');
+  this.route('upcoming-house-bills');
 });
 
 export default Router;
