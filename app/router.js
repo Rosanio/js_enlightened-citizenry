@@ -16,6 +16,7 @@ Router.map(function() {
   this.route('sponsor', {path: '/sponsor/:sponsor_id'});
   this.route('word-stats');
   this.route('searched-word', {path: '/results/:word'});
+  this.route('state', {path: '/state/:state'});
 });
 
 export default Router;
