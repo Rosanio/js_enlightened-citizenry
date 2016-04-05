@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('upcoming-house-bills');
   this.route('recent-senate-bills');
   this.route('upcoming-senate-bills');
+  this.route('sponsor');
 });
 
 export default Router;

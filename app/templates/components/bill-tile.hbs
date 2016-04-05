@@ -3,7 +3,7 @@
   {{#if showingBillDetails}}
     <h5>Bill Details:</h5>
     <p>{{bill.official_title}}</p>
-    <p>{{bill.sponsor.title}} {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</p>
+    <p>{{#link-to 'sponsor' bill.sponsor_id}}{{bill.sponsor.title}} {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}{{/link-to}}</p>
     <p>{{bill.introduced_on}}</p>
     <a href={{bill.last_version.urls.html}}>Link to latest version</a>
   {{/if}}
